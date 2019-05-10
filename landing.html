@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>HTML Template</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-auth.js"></script>
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="home">
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('./img/lap5.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Nav -->
+		<nav id="nav" class="navbar nav-transparent">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a href="index.html">
+							<h1 style="color:#6195FF;">GSC</h1>
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="#home">Beranda</a></li>
+					<li><a href="#about">Sewa</a></li>
+					<li><a href="#portfolio">Foto</a></li>
+					<li><a href="#service">GSC</a></li>
+					<li><a href="#sign">Masuk</a></li>
+					<li><a href="#contact">Hubungi</a></li>
+				</ul>
+				<!-- /Main navigation -->
+
+			</div>
+		</nav>
+		<!-- /Nav -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<div class="container">
+				<div class="row">
+
+					<!-- home content -->
+					<div class="col-md-10 col-md-offset-1">
+						<div class="home-content">
+							<h1 class="white-text">Golden Futsal Sport Center</h1>
+							<p class="white-text">PT. SATRIA SURYA PRATAMA
+							</p>
+							<a class="white-btn openSignin" href="#sign">Sign In</a>
+							<button class="main-btn so">Sign Up</button>
+						</div>
+					</div>
+					<!-- /home content -->
+
+				</div>
+			</div>
+		</div>
+		<!-- /home wrapper -->
+
+	</header>
+	<!-- /Header -->
+
+	
+
+	<!-- About -->
+	<div id="about" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Sewa Lapangan</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fas fa-dice-one"></i>
+						<h3>Lapangan 1</h3>
+						<p>Jadwal Lapangan 1</p>
+						<ul class="price-content">
+							<li>
+								<p>Senin-Jumat, 08.00-16.00 : Rp 115.000</p>
+							</li>
+							<li>
+								<p>Senin-Jumat, 16.00-01.00 : Rp 130.000</p>
+							</li>
+							<li>
+								<p>Sabtu-Minggu, 08.00-16.00 : Rp 170.000</p>
+							</li>
+							<li>
+								<p>Sabtu-Minggu, 16.00-01.00 : Rp 185.000</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<button class="outline-btn">Sewa</button>
+						</div>
+					</div>
+				</div>
+				<!-- /about -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fas fa-dice-two"></i>
+						<h3>Lapangan 2</h3>
+						<p>Jadwal Lapangan 2</p>
+						<ul class="price-content">
+							<li>
+								<p>Senin-Jumat, 08.00-16.00 : Rp 115.000</p>
+							</li>
+							<li>
+								<p>Senin-Jumat, 16.00-01.00 : Rp 130.000</p>
+							</li>
+							<li>
+								<p>Sabtu-Minggu, 08.00-16.00 : Rp 170.000</p>
+							</li>
+							<li>
+								<p>Sabtu-Minggu, 16.00-01.00 : Rp 185.000</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<button class="outline-btn">Sewa</button>
+						</div>
+					</div>
+				</div>
+				<!-- /about -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fas fa-dice-three"></i>
+						<h3>Lapangan 3</h3>
+						<p>Jadwal Lapangan 3</p>
+						<ul class="price-content">
+							<li>
+								<p>Senin-Jumat, 08.00-16.00 : Rp 115.000</p>
+							</li>
+							<li>
+								<p>Senin-Jumat, 16.00-01.00 : Rp 130.000</p>
+							</li>
+							<li>
+								<p>Sabtu-Minggu, 08.00-16.00 : Rp 170.000</p>
+							</li>
+							<li>
+								<p>Sabtu-Minggu, 16.00-01.00 : Rp 185.000</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<button class="outline-btn">Sewa</button>
+						</div>
+					</div>
+				</div>
+				<!-- /about -->
+
+			</div>
+			<!-- /Row -->
+			<button class="lihat-jadwal">Lihat Jadwal</button>
+			<button class="tutup-jadwal">Tutup Jadwal</button>
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /About -->
+
+
+	<!-- Portfolio -->
+	<div id="portfolio" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row galerirow">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Foto Foto Tim Futsal GSC</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- Work -->
+				<div class="col-md-4 col-xs-6 work">
+					<div class="framing"><img class="img-responsive" src="./img/foto1.PNG" alt=""></div>
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Category</span>
+						<h3>Lorem ipsum dolor</h3>
+						<div class="work-link">
+							<a href="#"><i class="fa fa-external-link"></i></a>
+							<a class="lightbox" href="./img/foto1.PNG"><i class="fa fa-search"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
+
+				<!-- Work -->
+				<div class="col-md-4 col-xs-6 work">
+					<div class="framing"><img class="img-responsive" src="./img/foto2.PNG" alt=""></div>
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Category</span>
+						<h3>Lorem ipsum dolor</h3>
+						<div class="work-link">
+							<a href="#"><i class="fa fa-external-link"></i></a>
+							<a class="lightbox" href="./img/foto2.PNG"><i class="fa fa-search"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
+
+				<!-- Work -->
+				<div class="col-md-4 col-xs-6 work">
+					<div class="framing"><img class="img-responsive" src="./img/foto3.PNG" alt=""></div>
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Category</span>
+						<h3>Lorem ipsum dolor</h3>
+						<div class="work-link">
+							<a href="#"><i class="fa fa-external-link"></i></a>
+							<a class="lightbox" href="./img/foto3.PNG"><i class="fa fa-search"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
+
+				<!-- Work -->
+				<div class="col-md-4 col-xs-6 work">
+					<div class="framing"><img class="img-responsive" src="./img/foto4.PNG" alt=""></div>
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Category</span>
+						<h3>Lorem ipsum dolor</h3>
+						<div class="work-link">
+							<a href="#"><i class="fa fa-external-link"></i></a>
+							<a class="lightbox" href="./img/foto4.PNG"><i class="fa fa-search"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
+
+				<!-- Work -->
+				<div class="col-md-4 col-xs-6 work">
+					<div class="framing"><img class="img-responsive" src="./img/foto5.PNG" alt=""></div>
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Category</span>
+						<h3>Lorem ipsum dolor</h3>
+						<div class="work-link">
+							<a href="#"><i class="fa fa-external-link"></i></a>
+							<a class="lightbox" href="./img/foto5.PNG"><i class="fa fa-search"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
+
+				<!-- Work -->
+				<div class="col-md-4 col-xs-6 work">
+					<div class="framing"><img class="img-responsive" src="./img/foto6.PNG" alt=""></div>
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Category</span>
+						<h3>Lorem ipsum dolor</h3>
+						<div class="work-link">
+							<a href="#"><i class="fa fa-external-link"></i></a>
+							<a class="lightbox" href="./img/foto6.PNG"><i class="fa fa-search"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Portfolio -->
+
+	<!-- Service -->
+	<div id="service" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Mengapa Harus GSC Futsal ?</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fas fa-globe"></i>
+						<p>Lapangan futsal GSC bertaraf internasional</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fas fa-dollar-sign"></i>
+						<p>Harga yang sangat terjangkau untuk semua kalangan dengan fasilitas yang nyaman</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fas fa-parking"></i>
+						<p>Parkir yang luas serta aman untuk motor maupun mobil</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+				
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Service -->
+
+
+	
+<div class="containerSign" id="sign">
+	<!-- sign in page -->
+<div id="signInPage">
+    <form class="fromSignin">
+        <p class="signinTitle">Sign in</p>
+        <input class="inputEmail" type="email" required placeholder="Email">
+        <input class="inputPass" type="password" required placeholder="Password">
+    </form>
+    <div>
+        <button class="signinBtn">Sign in</button>
+        <button class="gotosignupBtn">Sign up</button>
+        </div>
+</div>
+<!-- /sign in page -->
+
+<!-- sign up page -->
+<div id="signUpPage">
+    <form class="fromSignUp">
+        <p class="signupTitle">Sign up</p>
+        <input class="inputNamasup" type="text" required placeholder="Nama Lengkap">
+        <input class="inputNomorsup" type="number" required placeholder="Nomor Handphone">
+        <input class="inputEmailsup" type="email" required placeholder="Email">
+        <input class="inputPasssup" type="password" required placeholder="Password">
+    </form>
+    <div>
+        <button class="gotosigninBtn">Sign in</button>
+        <button class="signupBtn">Sign up</button>
+        </div>
+</div>
+<!-- /sign up page -->
+</div>
+	
+
+
+	
+
+	
+
+	<!-- Contact -->
+	<div id="contact" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section-header -->
+				<div class="section-header text-center">
+					<h2 class="title">Hubungi Kami</h2>
+				</div>
+				<!-- /Section-header -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-phone"></i>
+						<h3>Telepon</h3>
+						<p>( 021 ) 8771 6460</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-envelope"></i>
+						<h3>Email</h3>
+						<p>info@gscdepok.com</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-map-marked-alt"></i>
+						<a class="alamatnya" target="_blank" href="https://www.google.com/maps?ll=-6.355479,106.8393&z=16&t=m&hl=en&gl=ID&mapclient=embed&daddr=Golden+Futsal+Sport+Center+Satria+2nd+Building+Lantai+Basement+Jl.+Akses+Ui+Tugu,+Cimanggis,+Kota+Depok,+Jawa+Barat+16951@-6.3554789,106.8393004">
+							<h3>Alamat</h3>
+							<p>Jl. Akses UI No.26 Kelapa Dua Cimanggis – Depok Satria 2nd Building</p>
+						</a> 
+					</div>
+				</div>
+				<!-- /contact -->
+			
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Contact -->
+
+
+	<!-- Footer -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer logo -->
+					<div class="footer-logo">
+						<h1 style="color:#6195FF;">GSC</h1>
+					</div>
+					<!-- /footer logo -->
+
+					<!-- footer follow -->
+					<ul class="footer-follow">
+						<li><a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></i></a></li>
+						<li><a href="http://www.twitter.com"><i class="fab fa-twitter"></i></i></a></li>
+						<li><a href="http://www.plus.google.com"><i class="fab fa-google-plus"></i></i></a></li>
+						<li><a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="http://www.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+						<li><a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+					</ul>
+					<!-- /footer follow -->
+
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						<p>Copyright © 2019. | Muhammad Nico Farhan |</p>
+					</div>
+					<!-- /footer copyright -->
+
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</footer>
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/firebase.js"></script>
+	<script>
+		$('.so').click(function(){
+			firebase.auth().signOut();
+			window.location = './index.html';
+		});
+
+		firebase.auth().onAuthStateChanged(function(user) {
+	if (user) {
+        
+	  // User is signed in.
+	  alert('welcome');
+	} else {
+		window.location = "../index.html"
+	}
+  });
+
+  $('.lihat-jadwal').click(function(){
+	$('.tutup-jadwal').css('display','block');
+	$('.lihat-jadwal').css('display','none');  
+	$('.about').css('height','550px');
+  });
+
+  $('.tutup-jadwal').click(function(){
+	$('.tutup-jadwal').css('display','none');
+	$('.lihat-jadwal').css('display','block');
+	$('.about').css('height','145px');
+  });
+	</script>
+</body>
+
+</html>
